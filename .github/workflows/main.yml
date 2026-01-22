@@ -194,5 +194,8 @@ jobs:
           token: ${{ secrets.TELEGRAM_TOKEN }}
           message: |
             Деплой Kittygram успешно завершен!
+
+            Автор: ${{ github.actor }}
+            Коммит: https://github.com/${{ github.repository }}/commit/${{ github.sha }}
             
             Проект доступен по адресу: http://${{ secrets.HOST }}
